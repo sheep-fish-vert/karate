@@ -35,3 +35,29 @@
     }
 }
 
+.convert-all{padding: 110px 0 10px;background-image: url(../images/four-bg.jpg);
+    background-position: center top;
+    .top-block{ background-color: rgba(255,255,255,0.56);box-shadow: 0px 0px 25px 2px rgba(0,0,0,0.25);
+        .convert-stuf{height: 280px; display: flex; align-items: center;  justify-content: space-between; }
+        .image{position: relative; width: 42%; height: 280px;
+            img{position: absolute; top: -77px; width: 495px;}
+        }
+        .afrtertext{width: 58%; font-size: 21px; font-family: "Room",sans-serif; color: rgb(0, 0, 0);  line-height: 31px;}
+    }
+    .bottom-items{
+        .conteiner{ display: flex; flex-wrap: wrap; justify-content: space-between; align-content: space-between ;   padding-top: 135px;
+            .item{min-height: 226px; width: 48.5%; padding-bottom: 65px; 
+                .image-conteiner{position: relative; z-index: 2;
+                    img{position: absolute; top: 0; bottom: 0;}
+                }
+                .text-block{ padding-left: 185px;  position: relative; display: flex; align-items: center; justify-content: flex-start;min-height: 226px; background-color: #ffe400; box-shadow: 0px 0px 25px 2px rgba(0,0,0,0.25);
+                    .descript{font-size: 19px; padding-left: 25px; font-family: "Solomon", sans-serif; color: rgb(0, 0, 0);line-height: 24px;
+                        b{font-weight: 700;}
+                        p{font-weight: 400;}
+                    }
+                    &:after{content: ''; position: absolute; top: 0; right: 0; bottom: 0; background-image: url(../images/item-bg.png); width: 120px;}
+                }
+            }
+        }
+    }
+}
