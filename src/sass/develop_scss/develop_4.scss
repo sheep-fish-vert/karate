@@ -1,7 +1,7 @@
 $ye:#ffe400;
 
 /*second-block*/
-.second-block{background-color: $ye;
+.second-block{background-color: $ye;overflow: hidden;
     .title-s{font-size: 49px;line-height: 50px;font-weight: bold;max-width: 922px;margin:0 auto;    padding: 25px 0px;}
     .red-block{background: url('../images/red-block-bg.png') center top no-repeat;padding-top: 82px;font-family: "Solomon";
         .red-block-text{color: white;line-height: 39px;font-weight: 600;max-width: 733px;float: right;    margin-left: -40px;
@@ -18,7 +18,8 @@ $ye:#ffe400;
         .yellow-block-text-desc{float: right;max-width: 475px;text-align: right;}
         .yellow-block-img{float: right;margin-left: 15px;margin-top: -197px;}
     }
-    .grey-block{min-height: 400px;
+    .grey-block{min-height: 400px;position: relative;z-index: 3;
+        .grey-block-wrapp{}
         .grey-block-img{position: absolute;z-index: 1;top: -275px;right: -293px;
             img{max-width: none;}
         }
@@ -53,7 +54,7 @@ $ye:#ffe400;
             }
         }
     }
-    .bottom-block{margin-top: -23px;
+    .bottom-block{margin-top: -23px;position: relative;z-index: 2;
         .bottom-block-img{float: left;}
         .bottom-block-text{float: right;width: calc(100% - 275px);font-family: "Solomon";text-align: center;padding-top: 89px;
             h4{font-size: 31px;padding-bottom: 20px;font-weight: 600;}
