@@ -1,23 +1,78 @@
 /*four-block*/
     .fourth-block{ background-image: url(../images/four-bg.jpg); background-position: center top;
         .four-wrap{
-            .mbox{max-width: 1232px;}
-            .content{}
-            .title{font:400 71px/71px 'Room'; color: #000; width: 100%; text-align: center;}
-            .items-wrap{}
-            .item{position: relative;
+            .content{    padding: 42px 0 26px;}
+            .title{font:400 71px/71px 'Room'; color: #000; width: 100%; text-align: center;padding-bottom: 60px;}
+            .item{position: relative; border-radius: 8px; overflow: hidden; margin-bottom: 44px;
                 .bg{position: relative;
                     &:before{ content: ''; display: block; position: absolute; left:0; top:0;
-                        border-bottom:372px solid transparent;
+                        border-bottom:373px solid transparent;
                         border-right:201px solid transparent;
-                        border-top:372px solid rgba(255,228,0,0.9);
+                        border-top:373px solid rgba(255,228,0,0.9);
                         border-left:201px solid rgba(255,228,0,0.9);
                          }
+                    &:after{ content: ''; display: block; position: absolute; right:0; bottom:0;
+                        border-top:373px solid transparent;
+                        border-left:201px solid transparent;
+                        border-bottom:373px solid rgba(255,228,0,0.9);
+                        border-right:201px solid rgba(255,228,0,0.9);
+                         }
                 }
-                .txt{}
-                .img{position: absolute; left:50%; top:50%; transform:translate(-50%, -50%); z-index: 10;
-                    &:before{content: ''; width: 239px;height: 239px; border-radius: 50%; position: absolute; left:0; top:0; display: block; background-color: #ffe719;z-index: 5;}
-                    img, span{position: relative; z-index: 10;}
+                .txt{position: absolute; width: 100%; height: 100%; z-index: 10; top:0; left:0;
+                    ul{position: absolute; top: 0; left: 0;    padding: 65px 0 0 36px;
+                        &:nth-child(2){text-align: right; bottom: 0; right: 0; left: auto; top:auto; padding: 0 36px 74px 0;
+                            li{
+                                p:before{left:auto; right:-28px;}
+                            }
+                        }
+                    }
+                    li{font:400 24px/28px 'Room'; color: #000; position: relative; width: 100%;     margin-bottom: 49px;
+                        p{max-width: 320px; position: relative;
+                            &:before{content: '';display: block; background-image: url(../images/yell-li-mark.png); background-position: center; position: absolute; left:-28px; top:calc(50% - 18px);width: 14px;height: 37px; }
+                        }
+                    }
+
+                }
+                .img{position: absolute; left:50%; top:50%; transform:translate(-50%, -50%); z-index: 10;    max-width: 239px;  margin-top: -56px; width: 100%; text-align: center;
+                    &:before{content: ''; width: 239px;height: 239px; border-radius: 50%; position: absolute; left:0; top:44px;display: block; background-color: #ffe719;z-index: 5;}
+                    img, span{position: relative; z-index: 10; display: block;margin:0 auto;}
+                    span{font:400 62px/62px 'Room'; color: #000;    margin-top: -10px; }
+                }
+                &.red{
+                    .bg{
+                        &:before{ top:auto; bottom: 0;
+                            border-top:373px solid transparent;
+                            border-right:201px solid transparent;
+                            border-bottom:373px solid rgba(219,42,32,0.9);
+                            border-left:201px solid rgba(219,42,32,0.9);
+                             }
+                        &:after{top: 0; bottom: auto;
+                            border-bottom:373px solid transparent;
+                            border-left:201px solid transparent;
+                            border-top:373px solid rgba(219,42,32,0.9);
+                            border-right:201px solid rgba(219,42,32,0.9);
+                             }
+                    }
+                    .img{   margin-top: -52px;
+                        &:before{  left:0; top:29px; background-color: #db2a20;z-index: 5;}
+                        span{font:400 47px/47px 'Room'; color: #fff;    margin-top: 0; letter-spacing: -1.5px;}
+                    }
+                    .txt{
+                        ul{ left: auto; right:0;    padding: 65px  36px 0 0; text-align: right;
+                            &:nth-child(2){text-align: left;  right: auto; left: 0;padding: 0 0 101px 36px;
+                                li{
+                                    p:before{left:-28px; right:auto;}
+                                }
+                            }
+                        }
+                        li{ color: #fff;
+                            p{max-width: 255px;
+                                &:before{ background-image: url(../images/red-li-mark.png); left:auto; right:-28px; }
+                            }
+                        }
+
+                    }
+
                 }
             }
 

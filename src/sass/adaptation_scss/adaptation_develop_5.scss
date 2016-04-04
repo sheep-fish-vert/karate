@@ -1,0 +1,112 @@
+/*four-block*/
+    @media screen and (max-width: 992px){
+
+        .fourth-block{
+            .four-wrap{
+                .item{margin-bottom: 0;
+                    .bg{
+                        &:before,
+                        &:after{display: none;}
+                    }
+                    .txt{position: relative; background-color: rgba(255,228,0,1); padding: 26px 0;
+                        ul{position: relative; text-align: center; padding: 0;
+                            &:nth-child(2){ text-align: center; padding: 0;
+                                li{
+                                    &:nth-child(2n-1){
+                                        p:before{left:-28px; right:auto;}
+                                    }
+                                }
+                            }
+                        }
+                        li{margin-bottom: 15px;
+                            p{display: inline-block; max-width: none;}
+                            &:nth-child(2n){
+                                p:before{left:auto; right:-28px;}
+                            }
+                        }
+                    }
+                    &.red{
+
+                        .txt{position: relative; background-color:  rgba(219,42,32,1);
+                            ul{position: relative; text-align: center; padding: 0;
+                                &:nth-child(2){ text-align: center; padding: 0;
+                                    li{
+                                        &:nth-child(2n){
+                                            p:before{left:auto; right:-28px;}
+                                        }
+                                    }
+                                }
+                            }
+                            li{margin-bottom: 15px;
+                                p{display: inline-block; max-width: none;}
+                                &:nth-child(2n){
+                                    p:before{left:-28px; right:auto;}
+                                }
+                            }
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 600px){
+
+        .fourth-block{
+            .four-wrap{
+                .mbox{padding: 0;}
+                .item{
+                    .txt{
+                        ul{
+                            &:nth-child(2){
+                                li{padding: 0 20px;
+                                    &:nth-child(2n-1){
+                                        p:before{}
+                                    }
+                                }
+                            }
+                        }
+                        li{font:400 20px/24px 'Room';
+                            p{}
+                            &:nth-child(2n){
+                                p:before{}
+                            }
+
+                        }
+
+                    }
+                    .img{max-width: 120px; margin-top: -30px;
+                        img{max-width: 73px;}
+                        &:before{width: 120px;height: 120px; top: 20px;}
+                        span{font:400 31.17px/31.17px 'Room';}
+                    }
+                    &.red{
+                        .img{margin-top: -30px;
+                            &:before{ }
+                            span{font:400 25.96px/25.96px 'Room';}
+                        }
+                        .txt{
+                            ul{
+                                &:nth-child(2){
+                                    li{
+                                        &:nth-child(2n){
+                                            p:before{}
+                                        }
+                                    }
+                                }
+                            }
+                            li{
+                                p{}
+                                &:nth-child(2n){
+                                    p:before{}
+                                }
+                            }
+                        }
+
+                    }
+                }
+
+            }
+        }
+    }
+/*END four-block*/
