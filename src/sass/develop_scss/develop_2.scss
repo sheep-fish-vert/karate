@@ -1,4 +1,26 @@
-#call-popup{background-image: url(../images/pop-bg.png); width: 600px; height: 456px; border-radius: 5px; border: 3px solid rgba(255,255,255, 0.5); }
+#call-popup{ border-radius: 5px; border: 3px solid rgba(255,255,255, 0.5);
+    .contact-form{background-image: url(../images/pop-bg.png); background-size: cover; background-position: center center; display: flex; align-items: center; justify-content: center; width: 600px; height: 456px; 
+        .contact-form-title{font-size: 41px; font-family: "Solomon", sans-serif; color: rgb(255, 228, 0); font-weight: bold; line-height: 1.2; text-align: center; padding-bottom: 45px;}
+        .contact-form-item{max-width: 400px; width: 100%; margin: 0 auto; 
+            .form_input{ width: 100%; position: relative; padding: 6px 0;
+                input{ width: 100%; border: 3px solid white; border-radius: 8px; outline: none; height: 62px; line-height: 60px; color: white; background-color: transparent; font-size: 21px; padding-left: 18px; }
+                ::-webkit-input-placeholder {color: white;}
+                :-moz-placeholder {color: white;}
+                ::-moz-placeholder {color: white;}
+                :-ms-input-placeholder {color: white;}
+                label{display: none !important;}
+            }
+        }
+        .contact-form-row-submit{max-width: 410px; width: 100%; margin: 0 auto; padding-top: 20px;
+            button{font-size: 45px; width: 100%; display: flex;line-height: 1.2; justify-content: center; align-items: center; border: 3px solid transparent; border-radius: 8px; background-color: #db2a20; color: white; cursor: pointer;}
+        }
+    } 
+}
+
+#call_success{border-radius: 5px; border: 3px solid rgba(255,255,255, 0.5);
+    .call-success{background-image: url(../images/pop2-bg.png); background-position: center center; background-size: cover; display: flex; align-items: center; justify-content: center; width: 577px; height: 325px;
+        .call-title{text-align: center; font-size: 47px; font-family: "Solomon", sans-serif; color: rgb(255, 228, 0); font-weight: bold;}
+    }
+}
 
 .hidden-block{position: static;}
-
