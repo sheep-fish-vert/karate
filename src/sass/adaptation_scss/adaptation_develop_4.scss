@@ -42,7 +42,10 @@
 @media screen and (max-width: 992px){
     /*second-block*/
     .second-block{
-
+        .red-block{background: url("../images/red-block-bg.png") 42% top no-repeat;}
+        .grey-block .grey-block-text{width: 100%;max-width: 100%;margin-bottom: 45px;}
+        .grey-block .grey-block-img{top: -260px;right: -526px;}
+        .grey-block .grey-block-red-circle{float: none;margin: 0 auto;}
     }
     /*/second-block*/
 }
