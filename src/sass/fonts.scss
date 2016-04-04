@@ -19,5 +19,28 @@
 
 @include font-face('slick');
 
+// room
+@include font-face('Room', 'Room Thin', 100);
+@include font-face('Room', 'Room Light', 300);
+@include font-face('Room', 'Room', 400);
+@include font-face('Room', 'Room Medium', 500);
+@include font-face('Room', 'Room Bold', 700);
+@include font-face('Room', 'Room Black', 900);
+
+// solomon
+@include font-face('Solomon', 'Solomon Sans Thin', 100);
+@include font-face('Solomon', 'Solomon Sans Thin Italic', 100, italic);
+@include font-face('Solomon', 'Solomon Sans Light', 300);
+@include font-face('Solomon', 'Solomon Sans Light Italic', 300, italic);
+@include font-face('Solomon', 'Solomon Sans Normal', 400);
+@include font-face('Solomon', 'Solomon Sans Normal Italic', 400, italic);
+@include font-face('Solomon', 'Solomon Sans Book', 500);
+@include font-face('Solomon', 'Solomon Sans Book Italic', 500, italic);
+@include font-face('Solomon', 'Solomon Sans SemiBold', 600);
+@include font-face('Solomon', 'Solomon Sans SemiBold Italic', 600, italic);
+@include font-face('Solomon', 'Solomon Sans Bold', 700);
+@include font-face('Solomon', 'Solomon Sans Bold Italic', 700, italic);
+@include font-face('Solomon', 'Solomon Sans Black', 900);
+@include font-face('Solomon', 'Solomon Sans Black Italic', 900, italic);
 
 /* /fonts*/
