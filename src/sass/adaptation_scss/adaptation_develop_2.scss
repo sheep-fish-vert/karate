@@ -17,9 +17,15 @@
 
 }
 @media screen and (max-width: 767px){
-
+    .fancybox-form .fancybox-close { top: -45px; right: 10px;}
+    #call-popup .contact-form { min-width: 240px; width: 100%; padding: 10px; min-height: 350px; }
+    #call_success .call-success {min-width: 240px; width: 100%; padding: 10px; min-height: 220px;}
 }
 @media screen and (max-width: 666px){
+    #call-popup .contact-form .contact-form-title {font-size: 33px; padding-bottom: 20px;}
+    #call-popup .contact-form .contact-form-item .form_input input {font-size: 15px; height: 46px;     line-height: 44px;}
+    #call-popup .contact-form .contact-form-row-submit button { font-size: 34px; min-height: 54px;}
+    #call_success .call-success .call-title { font-size: 32px; }
 
 }
 @media screen and (max-width: 479px){
@@ -28,3 +34,4 @@
 @media screen and (max-width: 320px){
 
 }
+
