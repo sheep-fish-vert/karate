@@ -1,0 +1,26 @@
+/*four-block*/
+    .fourth-block{ background-image: url(../images/four-bg.jpg); background-position: center top;
+        .four-wrap{
+            .mbox{max-width: 1232px;}
+            .content{}
+            .title{font:400 71px/71px 'Room'; color: #000; width: 100%; text-align: center;}
+            .items-wrap{}
+            .item{position: relative;
+                .bg{position: relative;
+                    &:before{ content: ''; display: block; position: absolute; left:0; top:0;
+                        border-bottom:372px solid transparent;
+                        border-right:201px solid transparent;
+                        border-top:372px solid rgba(255,228,0,0.9);
+                        border-left:201px solid rgba(255,228,0,0.9);
+                         }
+                }
+                .txt{}
+                .img{position: absolute; left:50%; top:50%; transform:translate(-50%, -50%); z-index: 10;
+                    &:before{content: ''; width: 239px;height: 239px; border-radius: 50%; position: absolute; left:0; top:0; display: block; background-color: #ffe719;z-index: 5;}
+                    img, span{position: relative; z-index: 10;}
+                }
+            }
+
+        }
+    }
+/*END four-block*/
