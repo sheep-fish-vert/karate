@@ -8,7 +8,7 @@
                         &:before,
                         &:after{display: none;}
                     }
-                    .txt{position: relative; background-color: rgba(255,228,0,1); padding: 26px 0;
+                    .txt{position: relative; background-color: rgba(255,228,0,1); padding: 26px 0 32px;
                         ul{position: relative; text-align: center; padding: 0;
                             &:nth-child(2){ text-align: center; padding: 0;
                                 li{
@@ -18,7 +18,7 @@
                                 }
                             }
                         }
-                        li{margin-bottom: 15px;
+                        li{margin-bottom: 20px;
                             p{display: inline-block; max-width: none;}
                             &:nth-child(2n){
                                 p:before{left:auto; right:-28px;}
@@ -27,7 +27,7 @@
                     }
                     &.red{
 
-                        .txt{position: relative; background-color:  rgba(219,42,32,1);
+                        .txt{position: relative; background-color:  rgba(219,42,32,1);  padding: 26px 0 32px;
                             ul{position: relative; text-align: center; padding: 0;
                                 &:nth-child(2){ text-align: center; padding: 0;
                                     li{
@@ -37,7 +37,7 @@
                                     }
                                 }
                             }
-                            li{margin-bottom: 15px;
+                            li{margin-bottom: 20px;
                                 p{display: inline-block; max-width: none;}
                                 &:nth-child(2n){
                                     p:before{left:-28px; right:auto;}
@@ -55,18 +55,21 @@
         .fourth-block{
             .four-wrap{
                 .mbox{padding: 0;}
+                .title{font:400 46px/51px 'Room'; padding-bottom: 26px;}
+                .content{padding: 20px 0 26px;}
+                .bg>img{min-height: 244px;}
                 .item{
                     .txt{
                         ul{
                             &:nth-child(2){
-                                li{padding: 0 20px;
+                                li{
                                     &:nth-child(2n-1){
                                         p:before{}
                                     }
                                 }
                             }
                         }
-                        li{font:400 20px/24px 'Room';
+                        li{font:400 20px/24px 'Room'; padding: 0 40px;
                             p{}
                             &:nth-child(2n){
                                 p:before{}
@@ -76,7 +79,7 @@
 
                     }
                     .img{max-width: 120px; margin-top: -30px;
-                        img{max-width: 73px;}
+                        img{max-width: 73px; }
                         &:before{width: 120px;height: 120px; top: 20px;}
                         span{font:400 31.17px/31.17px 'Room';}
                     }
@@ -95,7 +98,7 @@
                                     }
                                 }
                             }
-                            li{
+                            li{ padding: 0 40px;
                                 p{}
                                 &:nth-child(2n){
                                     p:before{}
