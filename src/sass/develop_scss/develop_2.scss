@@ -9,18 +9,29 @@
                 ::-moz-placeholder {color: white;}
                 :-ms-input-placeholder {color: white;}
                 label{display: none !important;}
+                .error{border-color: red;}
             }
         }
         .contact-form-row-submit{max-width: 410px; width: 100%; margin: 0 auto; padding-top: 20px;
-            button{font-size: 45px; width: 100%; display: flex;line-height: 1.2; justify-content: center; align-items: center; border: 3px solid transparent; border-radius: 8px; background-color: #db2a20; color: white; cursor: pointer;}
+            button{font-size: 45px; width: 100%; display: flex;line-height: 1.2; justify-content: center; align-items: center; border: 3px solid transparent; border-radius: 8px; transition: all 0.5s; background-color: #db2a20; color: white; cursor: pointer; font-family: "Room", sans-serif; min-height: 75px;
+                &:hover{background-color: #ffe400; color: black;  }
+                &:active{background-color: #fff289; color: black; }
+            }
         }
     } 
 }
 
-#call_success{border-radius: 5px; border: 3px solid rgba(255,255,255, 0.5);
+#call_success{border-radius: 12px; overflow: hidden; border: 3px solid rgba(255,255,255, 0.5);
     .call-success{background-image: url(../images/pop2-bg.png); background-position: center center; background-size: cover; display: flex; align-items: center; justify-content: center; width: 577px; height: 325px;
         .call-title{text-align: center; font-size: 47px; font-family: "Solomon", sans-serif; color: rgb(255, 228, 0); font-weight: bold;}
     }
 }
+.fancybox-form{
+    .fancybox-skin {background: transparent;}
+    .fancybox-close{ width: 32px; height: 32px; overflow: hidden; background-image: none; top: 0; right: -47px;
+        &:before{content: ''; position: absolute; width: 50px; height: 3px; background-color: #a8a8a8; transform: rotate(45deg); top: 15px; right: -10px;}
+        &:after{content: ''; position: absolute; width: 50px; height: 3px; background-color: #a8a8a8; transform: rotate(-45deg); top: 14px; right: -10px;}
+        
+    }
+}
 
-.hidden-block{position: static;}
