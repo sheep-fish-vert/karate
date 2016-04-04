@@ -5,16 +5,46 @@
 
 }
 @media screen and (max-width: 1366px){
-
+    /*second-block*/
+    .second-block{
+        .title-s{text-align: center;}
+        .grey-block .trenya-form .item .hidden-item{width: 255px;right: -130px;}
+        .grey-block .trenya-form .item .hidden-item:after{top: -11px;right: 53%;}
+        .red-block .red-block-img{margin-left: 0;width: 30%;}
+        .red-block .red-block-text{width: 70%;}
+    }
+    /*/second-block*/
 }
 @media screen and (max-width: 1280px){
 
 }
+@media screen and (max-width: 1150px){
+    /*second-block*/
+    .second-block{
+        .yellow-block .yellow-block-img{width: 30%;margin-top: -100px;}
+        .yellow-block .yellow-block-text-desc{width: 70%;}
+    }
+    /*/second-block*/
+}
 @media screen and (max-width: 1024px){
-
+    /*second-block*/
+    .second-block{
+        .grey-block .grey-block-img{top: -260px;right: -167px;}
+        .grey-block .grey-block-red-circle p{font-size: 19px;line-height: 28px;}
+        .grey-block .grey-block-red-circle{width: 380px;height: 380px;}
+        .grey-block .grey-block-text{width: calc(100% - 385px);}
+        .grey-block .trenya-form .item .item-img{padding: 16px 0px;}
+        .grey-block .trenya-form{height: 201px;}
+        .grey-block .grey-block-text h4{font-size: 36px;}
+    }
+    /*/second-block*/
 }
 @media screen and (max-width: 992px){
+    /*second-block*/
+    .second-block{
 
+    }
+    /*/second-block*/
 }
 @media screen and (max-width: 767px){
 
