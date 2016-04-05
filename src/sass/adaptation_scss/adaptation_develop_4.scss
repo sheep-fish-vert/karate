@@ -53,7 +53,7 @@
 }
 @media screen and (max-width: 767px){
     /*second-block*/
-    .second-block{
+    .second-block{overflow: hidden;
         .yellow-block .yellow-block-img{margin-left: 0px;}
     }
     /*/second-block*/
@@ -106,9 +106,28 @@
         .grey-block .grey-block-red-circle p b{font-size: 32px;padding-top: 34px;padding-bottom: 3px;}
         .grey-block .grey-block-red-circle p {max-width: 270px;font-size: 17px;line-height: 23px;}
         .grey-block .grey-block-red-circle p span{font-size: 23px;}
+
+        .bottom-block .bottom-block-img{float: right;max-width: 206px;
+            img{max-width: 60%;margin:0 auto;display: block;}
+        }
+        .bottom-block .bottom-block-text{width: 100%;float: none;}
     }
+
     /*/second-block*/
 }
 @media screen and (max-width: 320px){
-
+     /*second-block*/
+     .second-block .red-block .red-block-img img{max-width: 134px;}
+     .second-block .red-block .red-block-text p{text-align: left;}
+     .second-block .red-block{padding-bottom: 20px;}
+     .second-block .grey-block .grey-block-text{padding-top: 10px;}
+     .second-block .grey-block .grey-block-text h4{font-size: 30px;}
+     .second-block .grey-block .trenya-form .item .item-title{font-size: 21px;}
+     .second-block .grey-block .trenya-form .item .item-title .icon-question{margin-left: 4px;margin-top: 5px;width: 18px;height: 18px;background-size: cover;}
+     .second-block .grey-block .trenya-form .item:nth-child(2) .hidden-item{right: -51px;}
+     .second-block .grey-block .trenya-form .item:nth-child(2) .hidden-item:after{right: 18%;}
+     .second-block .grey-block .grey-block-red-circle{width: 289px;height: 289px;}
+     .second-block .bottom-block{margin-top: 0px;}
+     .second-block .bottom-text{padding-top: 25px;}
+    /*/second-block*/
 }
