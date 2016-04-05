@@ -5,12 +5,14 @@
 
 }
 @media screen and (max-width: 1366px){
-
+    .seventh-block .seven-wrap .mbox2{padding: 0 40px;}
 }
 @media screen and (max-width: 1280px){
-
+    
 }
 @media screen and (max-width: 1024px){
+    
+    // block 8
     .convert-all {padding: 288px 0 10px;
         .bottom-items {
             .conteiner {padding-top: 25px;
@@ -25,16 +27,28 @@
             }
         }            
     }
+    
 }
 @media screen and (max-width: 992px){
 
 }
 @media screen and (max-width: 767px){
+    // slider 
+    .seventh-block .seven-wrap .slider-for {border: none; padding: 0;}
+    .seventh-block .seven-wrap .mbox2 { padding: 0;}
+    .seventh-block .seven-wrap {padding-top: 28px;  padding-bottom: 20px;}
+    .seventh-block .seven-wrap .title-text {font-size: 70px;  padding-bottom: 25px;}
+    .slider-nav{display: none;}
+    
+    //popups
     .fancybox-form .fancybox-close { top: -45px; right: 10px;}
     #call-popup .contact-form { min-width: 240px; width: 100%; padding: 10px; min-height: 350px; }
     #call_success .call-success {min-width: 240px; width: 100%; padding: 10px; min-height: 220px;}
+    
 }
 @media screen and (max-width: 666px){
+    
+    //popups
     #call-popup .contact-form .contact-form-title {font-size: 33px; padding-bottom: 20px;}
     #call-popup .contact-form .contact-form-item .form_input input {font-size: 15px; height: 46px;     line-height: 44px;}
     #call-popup .contact-form .contact-form-row-submit button { font-size: 34px; min-height: 54px;}
@@ -42,7 +56,7 @@
 
 }
 @media screen and (max-width: 600px){
-    
+    // block 8
     .convert-all {
         .bottom-items .conteiner .item {width: calc(100% + 30px); margin: 0 -15px 25px; padding: 22px 5px; background-color: #ffe400; display: flex; justify-content: space-between;         align-items: center; position: relative;
             .image-conteiner{ min-width: 180px; align-self: flex-start;
@@ -62,6 +76,7 @@
 }
 
 @media screen and (max-width: 479px){
+    // block 8
     .convert-all .bottom-items .conteiner .item .image-conteiner{ min-width: 130px; }
 }
 
