@@ -94,7 +94,7 @@ $ye:#ffe400;
 /*/header*/
 
 /*top-block*/
-.top-block{background: url(../images/top-block-bg.jpg) center top no-repeat;background-size: cover;    padding-top: 184px;
+.top-block{background: url(../images/top-block-bg.jpg) center top no-repeat;background-size: cover;    padding-top: 184px;overflow: hidden;
     .top-block-wrap{background: url(../images/top-block-children.png) center bottom no-repeat;}
     .top-description{text-align: center;color: white;
         span{color: $ye;}
@@ -106,6 +106,7 @@ $ye:#ffe400;
     .bottom-last-text{text-align: center;font-size: 23px;color: $ye;padding-top: 49px;line-height: 34px;padding-bottom: 45px;
         span{font-size: 31px;}
     }
+    .top-description-mobile-img{display: none;}
 }
 /*/top-block*/
 
@@ -154,5 +155,27 @@ $ye:#ffe400;
         }
         b{font-size: 45px;display: block;line-height: 1;transition:all ease-out .2s;margin-top: -14px;}
     }
+    .errorText{display: none !important;}
+    .form_row.error{
+        input{border-color: red;}
+        .jq-selectbox .jq-selectbox__select{border-color: red;}
+        .jq-selectbox .jq-selectbox__trigger-arrow{border-top: 9px solid red;}
+        .jq-radio{border-color: red;}
+    }
 }
 /*/lend-form*/
+
+/*third-block*/
+.third-block{background: #000 url('../images/third-block-bg.png') center top no-repeat;min-height: 735px;
+    .lend-form{float: right;padding-right: 0;padding-bottom: 0;}
+    .lend-form .contact-form-title h4{margin-bottom: 37px;line-height: 37px;padding-top: 15px;}
+    .lend-form .radio-holder-wrap{padding-bottom: 56px;}
+    .lend-form .jq-selectbox{margin-bottom: 25px;}
+    .lend-form .contact-submit{margin-top: 35px}
+
+    .third-block-text{text-align: center;position: relative;color: $ye;max-width: 600px;width: 100%;float: right;padding-top: 20px;padding-bottom: 45px;
+        a{text-decoration: none;color: white;font-size: 36px;text-decoration: none;font-family: "Solomon";}
+        p{position: absolute;right: calc(100% + 27px);top: -75px;font-size: 55px;}
+    }
+}
+/*/third-block*/
