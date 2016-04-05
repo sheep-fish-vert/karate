@@ -135,27 +135,39 @@
     @media screen and (max-width: 992px){
         .fifth-block{
             .fifth-wrap{
-                .content{padding-top: 20px;}
-                .title{}
+                .content{padding-top: 25px;     padding-bottom: 40px;}
                 .price{position: relative; height: 312px;width: 312px; background-size: cover;     left: calc(50% - 156px);
                     p{font:700 27.76px/32px 'Solomon';
                         &:nth-child(2){font:700 105.36px/80px 'Solomon'; }
                         &:nth-child(3){font:700 33.46px/36px 'Solomon';}
                     }
                 }
-                .item-list{    padding-top: 20px;
+                .item-list{       padding-top: 34px;     padding-bottom: 29px;
                     .mobile{display: block;}
-                    ul{}
-                    li{background-color: rgba(255,228,0,0.8); margin-bottom: 3px;
-                        &:before,
-                        &:after{display: none;}
+                    table{border-collapse: collapse; width: 100%;
+                        td{height: 70px;text-align: center; vertical-align: middle;padding: 0 20px 0; border-bottom: 3px solid #000;background-color: rgba(255,228,0,0.8);}
                     }
-                    span{}
-                    b{ }
                     .descktop{ display: none;}
                 }
-                .button-wrap{
-                    a{}
+
+            }
+        }
+    }
+    @media screen and (max-width: 660px){
+        .fifth-block{
+            .fifth-wrap{    background-position: -1233px top;
+                .mbox{padding: 0;}
+                .title{font:400 51px/51px 'Room';}
+                .item-list{
+                    span{font:500 18px/22px 'Room';}
+                    b{ font:500 28px/22px 'Room';}
+                }
+                .button-wrap{padding: 0 5px;
+                    a{    padding-top: 2px; text-transform: none; height: 72px;
+                        span{font:500 46px/39px 'Room'; display: block; width: 100%;
+                            &:last-child{font:500 25px/25px 'Room';}
+                        }
+                    }
                 }
             }
         }
