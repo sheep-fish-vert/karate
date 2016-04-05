@@ -179,3 +179,25 @@ $ye:#ffe400;
     }
 }
 /*/third-block*/
+
+/*tenth-block*/
+.tenth-block{overflow: hidden;
+    .tenth-block-bottom{min-height: 235px;background: url('../images/tenth-block-bottom-bg.jpg') left top no-repeat;background-size: cover;}
+    .tenth-block-top{background: url('../images/tenth-block-top-bg.jpg') center top no-repeat;background-size: cover;padding-top: 97px;}
+    .tenth-block-video{padding-bottom: 85px;
+        iframe{margin:0 auto;display: block;border:6px solid rgba(255,255,255, 0.2);border-radius:6px;}
+    }
+    .tenth-block-form{margin-bottom: -90px;position: relative;}
+    .tenth-block-left-children{position: absolute;bottom: -79px;left: -29px;z-index: -2;
+        img{max-width: none;}
+    }
+    .tenth-block-form form{position: relative;z-index: 2;padding: 21px 30px 30px;}
+    .tenth-block-form .lend-form{padding: 0;}
+    .tenth-block-right-children{position: absolute;bottom: -135px;right: -15px;z-index: -2;
+        img{max-width: none;}
+    }
+    .tenth-block-bottom{text-align: center;display: flex;flex-direction:column;justify-content:flex-end;align-items:center;
+        p{color: $ye;font-size: 69px;padding-bottom: 50px;}
+    }
+}
+/*/tenth-block*/
