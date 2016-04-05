@@ -129,3 +129,41 @@
                 }
             }
 /*END fifth-block*/
+/*six - block*/
+    .sixth-block{
+        .title{font:400 77px/77px 'Room'; color: #000; width: 100%; text-align: center;}
+        .item{ color: #000; text-align: center; position: relative; padding-top: 24px;
+                p{font:400 19px/28px 'Solomon';}
+                h6{padding-bottom: 10px;}
+                h6>p{font:700 29px/33px 'Room';}
+                img{position: absolute; display: block; left:50%; transform:translateX(-50%); bottom:100%;}
+            }
+        .subtitle{font:400 39px/52px 'Room'; color: #db2a20; text-align: center;margin-top: -34px;
+                p{
+                    &:first-child{font:700 70px/87px 'Room';}
+                    &:nth-child(3){position: relative; padding-bottom: 7px;    margin-bottom: 13px;
+                        &:after{content: ''; display: block;position: absolute; height: 3px; width: 254px; background-color: #db2a20; left:calc(50% - 127px); bottom: 0;}
+                    }
+                }
+            }
+        .descktop{background-image: url(../images/sixBg.jpg); background-position: center top; background-repeat: no-repeat;     padding: 35px 0 121px;
+            .wrapper{}
+            .items{display: flex; width: 100%; justify-content: space-between;
+                &.top{        padding: 256px 15px 0 37px;
+                    .item:nth-child(2){    margin-left: 32px;}
+                }
+                &.bottom{        padding:201px 96px 0 157px;}
+            }
+
+
+        }
+        .mobile{background-image: url(../images/bgforsix.jpg); background-position: center top;      padding: 35px 0 121px; position: relative; display: none;
+            .bg-circl{position: absolute; left:calc(50% - 160px);}
+            .items{display: flex; width: 100%; justify-content: center; flex-wrap:wrap;}
+            .item{padding: 100px 15px 0;
+                img{bottom: auto; top:0;}
+            }
+            .subtitle{margin-top: 0; padding:30px 0;}
+        }
+    }
+/*END six - block*/
