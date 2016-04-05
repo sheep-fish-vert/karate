@@ -67,3 +67,40 @@ $ye:#ffe400;
     }
 }
 /*/second-block*/
+
+/*header*/
+.header{position: absolute;top: 0;left: 0;width: 100%;padding: 10px 0px;
+    .header-nav{display: none;}
+    .header-top{
+        .mbox{display: flex;flex-wrap:wrap;justify-content:space-between;align-items: stretch;}
+        .header-logo{margin-left: -20px;}
+        .header-text{line-height: 31px;color: #bdb8b6;font-size: 20px;text-align: center;display: flex;justify-content: center;align-items: center;flex-direction: column;
+            p{}
+        }
+        .header-contants{display: flex;justify-content: space-around;align-items: center;flex-direction: column;}
+        .header-telefone{margin-top: 10px;
+            a{font-family: "Solomon";color: white;font-size: 42px;line-height:39px;text-decoration: none;}
+        }
+        .header-button{text-align: center;width: 100%;max-width: 291px;}
+    }
+}
+.button{width: 100%;max-width: 291px;height: 50px;display: flex;justify-content:center;align-items:center;text-decoration: none;background-color: #db2a20;border-radius: 6px;margin:0 auto;transition:all ease-out .2s;
+    span{color: white;font-size: 31px;line-height: 21px;margin-top: -5px;transition:all ease-out .2s;}
+    &:hover{background-color: #ffe400;
+        span{color: #000;}
+    }
+    &:active{background-color: #fff289;}
+}
+/*/header*/
+
+/*top-block*/
+.top-block{background: url(../images/top-block-bg.jpg) center top no-repeat;background-size: cover;    padding-top: 184px;
+    .top-block-wrap{min-height: 1185px;background: url(../images/top-block-children.png) center bottom no-repeat;}
+    .top-description{text-align: center;color: white;
+        span{color: $ye;}
+        .top-title{font-size: 59px;font-weight: bold;text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.75);    margin: 0 -13px 20px;line-height: 67px;}
+        .top-subtitle{display: inline-block;padding: 3px 6px 5px;background-color: #000;font-size: 27px;font-weight: bold;margin-bottom: 37px;}
+        p{font-family: "Solomon";font-size: 22px;line-height:39px;max-width: 850px;margin:0 auto;margin-bottom: 36px;}
+    }
+}
+/*/top-block*/
