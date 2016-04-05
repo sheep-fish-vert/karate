@@ -25,6 +25,10 @@
         .yellow-block .yellow-block-text-desc{width: 70%;}
     }
     /*/second-block*/
+
+    /*third-block*/
+    .third-block{background: #000 url("../images/third-block-bg.png") 34% top no-repeat;}
+    /*/third-block*/
 }
 @media screen and (max-width: 1024px){
     /*second-block*/
@@ -38,6 +42,10 @@
         .grey-block .grey-block-text h4{font-size: 36px;}
     }
     /*/second-block*/
+
+    /*top-block*/
+    .top-block .top-block-wrap{background-size: 145%;}
+    /*/top-block*/
 }
 @media screen and (max-width: 992px){
     /*second-block*/
@@ -50,6 +58,21 @@
         .grey-block .trenya-form .item:last-child .hidden-item:after{right: 15px;}
     }
     /*/second-block*/
+
+    /*top-block*/
+    .top-block .bottom-last-text{font-size: 19px;padding-top: 53px;line-height: 25px;padding-bottom: 43px;max-width: 367px;margin: 0 auto;}
+    /*/top-block*/
+
+    /*third-block*/
+    .third-block{
+        .mbox{padding: 0;background-color: rgba(0, 0, 0, 0.75);}
+        .lend-form{float: none;padding: 21px 15px 30px;background-color: transparent;}
+        .third-block-text{float: none;margin:0 auto;
+            a{display: none;}
+            p{position: relative;top: 0;left: 0;}
+        }
+    }
+    /*/third-block*/
 }
 @media screen and (max-width: 767px){
     /*second-block*/
@@ -94,6 +117,51 @@
         .bottom-text{font-size: 23px;line-height: 27px;padding-top: 41px;padding-bottom: 36px;}
     }
     /*/second-block*/
+
+
+    /*top-block*/
+    .top-block .top-description .top-title{margin: 0 9px 20px;line-height: 45px;font-size: 38px;}
+    .top-block .top-description .top-subtitle{margin:0 -15px 30px;font-size: 21px;}
+    .top-block .top-description p{font-size: 19px;line-height: 26px;}
+    .top-block .top-description-mobile-img{display: block;margin:0 -15px;}
+    .top-block .top-block-wrap{background:none;}
+    .top-block .top-block-form{padding-top: 0;margin:0 -15px;}
+    .top-block .lend-form{max-width: 100%;border-radius: 0px;background-color: rgb(0, 0, 0);}
+    .top-block .bottom-last-text{max-width: none;background-color: rgb(0, 0, 0);margin:0 -15px;width: auto;padding-top: 22px;}
+    .lend-form .contact-form-title h4{font-size: 23px;line-height: 26px;}
+    .lend-form .contact-form-title b{font-size: 26px;}
+    .lend-form p{line-height: 19px;font-size: 16px;}
+    .lend-form .radio-holder span{font-size: 21px;}
+    .lend-form .radio-holder-wrap{flex-direction:column;padding-bottom:10px;}
+    .lend-form .contact-form-title{margin-bottom: 20px;}
+    .lend-form .radio-holder{margin-bottom: 15px;}
+
+    .lend-form .jq-selectbox .jq-selectbox__select{height: 48px;}
+    .lend-form .jq-selectbox{max-width: 303px;}
+    .lend-form .jq-selectbox .placeholder{font-size: 17px;padding-top: 4px;}
+    .lend-form input{height: 48px;font-size: 17px;max-width: 303px;}
+    .lend-form .jq-selectbox .jq-selectbox__trigger-arrow{top: 17px;}
+    .lend-form .contact-submit{max-width: 303px;height: 55px;}
+    .lend-form .contact-submit b{font-size: 33px;margin-top: -11px;}
+    .lend-form .contact-submit span{font-size: 17px;font-size: 17px;margin-top: -5px}
+    .lend-form .jq-selectbox .jq-selectbox__dropdown:after{height: 55px;top: -55px;}
+    .lend-form .jq-selectbox .jq-selectbox__dropdown li{padding: 11px 10px 11px 10px;}
+    .lend-form .jq-selectbox .jq-selectbox__dropdown li:after{display: none;}
+    .top-block .bottom-last-text span{font-size: 23px}
+    .top-block .bottom-last-text{font-size: 18px;padding-bottom: 35px;}
+    /*/top-block*/
+    .lend-form{min-height: auto;}
+
+    /*third-block*/
+    .third-block{position: relative;z-index: 5;
+        .lend-form .radio-holder-wrap{padding-bottom: 10px}
+        .third-block-text{padding-top: 0px;padding-bottom: 35px;}
+        .contact-form-title p{line-height: 20px;padding: 0 15px;}
+    }
+    /*/third-block*/
+
+
+
 }
 @media screen and (max-width: 479px){
     /*second-block*/
@@ -130,4 +198,15 @@
      .second-block .bottom-block{margin-top: 0px;}
      .second-block .bottom-text{padding-top: 25px;}
     /*/second-block*/
+
+    /*top-block*/
+    .top-block .top-description .top-title{margin-left: 0;margin-right: 0;font-size: 35px;}
+    .lend-form .contact-form-title h4{font-size: 24px;line-height: 25px;}
+    .lend-form .contact-form-title b{font-size: 24px;}
+    .lend-form .jq-selectbox .jq-selectbox__select{font-size: 16px;}
+    .lend-form .jq-selectbox .jq-selectbox__select-text{padding-top: 5px;}
+    .lend-form .contact-submit b{font-size: 31px;margin-top: -7px;}
+    .top-block .bottom-last-text{padding-top: 0px}
+    /*/top-block*/
+    .lend-form{padding: 21px 20px 30px;}
 }
