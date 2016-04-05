@@ -173,3 +173,44 @@
         }
     }
 /*END fifth-block*/
+/*six - block*/
+    @media screen and (max-width: 1100px){
+        .sixth-block{
+            .descktop{
+                .items{
+                    &.top{        padding: 256px 0 0 ;
+                        .item:nth-child(2){    margin-left:0;}
+                    }
+                    &.bottom{        padding:201px 0 0;}
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 992px){
+        .sixth-block{
+            .descktop{display: none;}
+            .mobile{display: block;}
+        }
+    }
+    @media screen and (max-width: 480px){
+        .sixth-block{
+            .mobile{ padding: 35px 0 0;
+                .mbox{padding: 0;}
+                .title{font:400 53px/53px 'Room';}
+                .bg-circl{}
+                .items{    padding-top: 34px;}
+                .item{    padding: 95px 15px 28px;
+                    p{font:400 17px/26px 'Solomon';}
+                    h6{padding-bottom: 0;}
+                    h6>p{font:700 22px/25px 'Room';}
+                }
+                .subtitle{font:400 23px/33px 'Room'; padding: 39px 0;
+                    p{
+                        &:first-child{font:700 49px/70px 'Room';}
+                        &:nth-child(3) {padding-bottom: 0px;  margin-bottom: 0px;}
+                    }
+                }
+            }
+        }
+    }
+/*END six - block*/
