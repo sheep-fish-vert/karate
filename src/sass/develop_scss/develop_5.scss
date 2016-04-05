@@ -80,7 +80,7 @@
 /*END four-block*/
 /*fifth-block*/
     .fifth-block{
-        .fifth-wrap{background-image: url(../images/fifth-bg.jpg); background-position: center top;
+        .fifth-wrap{background-image: url(../images/fifth-bg.jpg); background-position: right top; background-repeat: no-repeat; background-color: #000;
             .content{position: relative;    padding-top: 68px;     padding-bottom: 63px;}
             .title{font:400 80px/80px 'Room'; color: #fff; width: 100%; text-align: center;}
             .price{width: 433px;height: 435px; background-image: url(../images/romb.png); background-position:center top; background-repeat: no-repeat; text-align: center; position: absolute; top:calc(50% - 237px); left:calc(50% - 216px); z-index: 20; padding-top: 69px;
@@ -120,9 +120,10 @@
                     }
                 }
             }
-            .button-wrap{text-align: center;
-                a{text-decoration: none;font:500 31px/37px 'Room'; color: #fff;  text-transform: uppercase; padding:10px 0 0;max-width: 678px; height: 88px;background-color: #db2a20; display: inline-block; border-radius: 8px; width: 100%; padding-top: 27px;}
-            }
+
         }
     }
+.button-wrap{text-align: center;
+                a{text-decoration: none;font:500 31px/37px 'Room'; color: #fff;  text-transform: uppercase; padding:10px 0 0;max-width: 678px; height: 88px;background-color: #db2a20; display: inline-block; border-radius: 8px; width: 100%; padding-top: 27px;}
+            }
 /*END fifth-block*/
