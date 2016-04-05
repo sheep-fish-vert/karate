@@ -64,8 +64,20 @@ $(document).ready(function() {
         focusOnSelect: true
     });
 
-        
+    $('.show-hide-nav-text').click(function() {
+        if (!$('.header-menu-list').hasClass('opened-menu')){
+            $('.header-menu-list').addClass('opened-menu');
+            console.log('open');
+        }        
+    });
 
+    $('.close-button').click(function() {
+        if ($('.header-menu-list').hasClass('opened-menu')){
+            $('.header-menu-list').removeClass('opened-menu');
+        }        
+    });
+        
+    
 });
 
 $(window).load(function() {
