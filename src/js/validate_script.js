@@ -101,7 +101,7 @@ function validationCall(form){
   var formSur = thisForm.serialize();
 
     $.ajax({
-        url : thisForm.attr('action'),
+        url : ajaxUrl,
         data: formSur,
         method:'POST',
         success : function(data){
@@ -126,7 +126,7 @@ function validationCallDocument(form){
     formData.append('file', thisForm.find('input[type=file]')[0].files[0]);
 
     $.ajax({
-        url: thisForm.attr('action'),
+        url: ajaxUrl,
         type: "POST",
         data: formData,
         contentType:false,

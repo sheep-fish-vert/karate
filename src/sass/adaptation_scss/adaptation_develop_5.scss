@@ -219,7 +219,22 @@
     }
 /*END six - block*/
 /*nineth-block*/
-    @media screen and (max-width: 1200px){
+    @media screen and (max-width: 1280px){
+        /*9 block*/
+        .nineth-block .descktop .txt p{font: 400 16px/18px 'Solomon';}
+        .nineth-block .descktop .txt p:first-child{font: 600 20px/17px 'Solomon';}
+        .nineth-block .descktop .txt:nth-child(2){max-width: 218px;}
+        .nineth-block .descktop .txt:nth-child(6){max-width: 246px;}
+        .nineth-block .descktop .img{max-width: 401px;}
+        .nineth-block .descktop .strelka{max-width: 485px;font: 400 59px/80px 'Solomon';}
+        .nineth-block .descktop .row:nth-child(3) .txt:nth-child(2){max-width: 390px;}
+        .nineth-block .descktop .row:nth-child(3) .txt:nth-child(4){max-width: 308px;}
+        .nineth-block .descktop{display: flex;flex-direction: column;flex-wrap: wrap;justify-content: center;align-items: center;}
+        .nineth-block .descktop .row:nth-child(2){display: flex;justify-content: center;align-items: center;}
+        .nineth-block .descktop .strelka{margin: 20px 0 0px 0px;}
+        /*/9 block*/
+    }
+    @media screen and (max-width: 1023px){
         .nineth-block{
             .title{ height: auto; min-height: 125px; font-size: 44px; line-height: 1; }
             .descktop{display: none;}
