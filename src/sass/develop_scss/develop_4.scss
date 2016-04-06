@@ -145,7 +145,7 @@ $ye:#ffe400;
     }
     .jq-selectbox{max-width: 406px;width: 100%;
         &.opened{
-            .jq-selectbox__select{border-bottom-left-radius: 6px;border-bottom-right-radius: 6px;}
+            .jq-selectbox__select{border-bottom-left-radius: 7px;border-bottom-right-radius: 7px;    border-color: black;}
         }
         .jq-selectbox__select{height: 62px;background:transparent;text-shadow:none;box-shadow: none;font-family: "Solomon";color: white;font-size: 21px;border:3px solid #fff;border-radius: 10px;z-index: 3;padding: 0 45px 0 20px;}
         .jq-selectbox__select-text{padding-top: 10px;text-align: left;}
@@ -191,7 +191,12 @@ $ye:#ffe400;
     .lend-form .contact-submit{margin-top: 35px}
 
     .third-block-text{text-align: center;position: relative;color: $ye;max-width: 600px;width: 100%;float: right;padding-top: 20px;padding-bottom: 45px;
-        a{text-decoration: none;color: white;font-size: 36px;text-decoration: none;font-family: "Solomon";}
+        a{text-decoration: none;color: white;font-size: 36px;text-decoration: none;font-family: "Solomon";position: relative;
+            &:after{content: '';width: 100%;left: 0;width: 0;height: 2px;background-color: white;transition:all ease .3s;bottom: -1px;position: absolute;}
+            &:hover{
+                &:after{width: 100%;}
+            }
+        }
         p{position: absolute;right: calc(100% + 27px);top: -75px;font-size: 55px;}
     }
     .animate-it{opacity: 0;visibility: hidden;transition:all ease-out .5s;

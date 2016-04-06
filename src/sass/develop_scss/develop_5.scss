@@ -132,6 +132,14 @@
             }
 
         }
+        .button-wrap{
+            a{text-decoration: none;
+                &:hover{background-color: #ffe400;text-decoration: none;transition:all ease-out .2s;
+                       span{color: #000;}
+                }
+                &:active{background-color: #fff289;}
+            }
+        }
     }
 .button-wrap{text-align: center;
                 a{text-decoration: none;font:500 31px/37px 'Room'; color: #fff;  text-transform: uppercase; padding:10px 0 0;max-width: 678px; height: 88px;background-color: #db2a20; display: inline-block; border-radius: 8px; width: 100%; padding-top: 27px;
