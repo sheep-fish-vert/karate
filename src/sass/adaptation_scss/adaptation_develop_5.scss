@@ -137,11 +137,14 @@
             .fifth-wrap{
                 .magic{    background-position: 78% top;}
                 .content{padding-top: 25px;     padding-bottom: 40px;}
-                .price{position: relative; height: 312px;width: 312px; background-size: cover;     left: calc(50% - 156px);
+                .price{position: relative;  height: 312px;width: 312px;    left: calc(50% - 156px);
+                    .conver-texter{height: 312px;width: 312px; background-size: cover;}
                     p{font:700 27.76px/32px 'Solomon';
                         &:nth-child(2){font:700 105.36px/80px 'Solomon'; }
                         &:nth-child(3){font:700 33.46px/36px 'Solomon';}
                     }
+                    &:before{ width: 220px; height: 220px; z-index: -1; transform: rotate(40deg);top:calc(50% - 109px); left: calc(50% - 111px);z-index: 20; transition: all 0.3s;}
+
                 }
                 .item-list{       padding-top: 34px;     padding-bottom: 29px;
                     .mobile{display: block;}
@@ -233,9 +236,27 @@
     }
     @media screen and (max-width: 1023px){
         .nineth-block{
+            .title{ height: auto; min-height: 125px; font-size: 44px; line-height: 1; }
             .descktop{display: none;}
-            .mobile{display:block;}
+            .mobile{display:block;
+                .convert{
+                    .conteiner{ max-width: 650px; margin: 0 auto; padding-bottom: 10px;
+                        .item{ padding: 15px 10px;
+                            .po{ width: 70px; height: 70px; margin: 0 auto; display: flex; align-items: center; justify-content: center; border-radius: 50%; background-color: #ffe400; font-size: 43px;  font-family: "Solomon", sans-serif; color: rgb(0, 0, 0);}
+                            .de{font-size: 22px; font-family: "Solomon"; color: rgb(219, 42, 32);   font-weight: 600;   line-height: 1.2; text-align: center; padding-top: 5px; padding-bottom: 10px;}
+                            .ir{font-size: 22px; font-family: "Solomon"; color: black;   font-weight: 400;   line-height: 1.2; text-align: center;}
+                            .ghnt{ text-align: center;
+                                img{}
+                            }
+                            .wert{ height: 100px; background-image: url(../images/wert.png);margin: 0 -20px;background-repeat: no-repeat; background-position: center center; display: flex; align-items: center; justify-content: center;
+                                p{font-size: 44px; font-family: "Solomon";  color: rgb(205, 31, 47);  line-height: 1.2;}                                
+                            }
+                        }
+                    }
+                }
+            }
         }
 
     }
 /*END nineth-block*/
+

@@ -61,7 +61,7 @@ function animationBlock(item){
                  if(itemSect.find('.animate-delay').length == point){
                      clearInterval(timer);
                  }
-              },200);
+              },1000);
 
 
            }
