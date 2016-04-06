@@ -19,13 +19,17 @@
         .bottom-items {
             .conteiner {padding-top: 25px;
                .item {width: 100%; padding-bottom: 25px;} 
+               
             } 
         }
         .top-block-2 {
             .afrtertext { width: 100%; text-align: center; padding-bottom: 35px; padding-top: 15px;}
             .convert-stuf{display: block; height: auto;}
             .image { width: 100%; height: 226px;
-                img {position: absolute; display: block; margin: 0 auto; top: -228px; transform: translateX(-50%); left: 50%;}
+                img {position: absolute; display: block; margin: 0 auto; transform: translateX(-50%); left: 50%; }
+                &.animated{
+                    img{top: -228px;  opacity: 1;}
+                }
             }
         }            
     }
@@ -127,7 +131,7 @@
             }
         }
         .top-block-2 {
-            .image {width: 100%; height: 150px;
+            .image {width: 100%; height: 210px;
                 img{ width: 315px; top: -145px;}
             }
             .afrtertext {font-size: 15px; line-height: 24px;}
@@ -135,15 +139,20 @@
     }
 }
 
-@media screen and (max-width: 479px){
+@media screen and (max-width: 500px){
     // block 8
+    .convert-all .top-block-2 .image.animated img {top: -81%;}
+    .convert-all .top-block-2 .image { width: 100%; height: 230px; }
     .convert-all .bottom-items .conteiner .item .image-conteiner{ min-width: 130px; }
 }
 
 @media screen and (max-width: 420px){
-
+    .convert-all .top-block-2 .image.animated img { top: -123%;}
+    .convert-all .top-block-2 .image { height: 160px;}
 }
 @media screen and (max-width: 320px){
+    .convert-all .top-block-2 .image { height: 164px;}
+    .convert-all .top-block-2 .image.animated img {top: -82%;}
 }
 
 

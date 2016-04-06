@@ -37,15 +37,17 @@
     }
 }
 
-
 // block 8
 
-.convert-all{padding: 110px 0 10px;background-image: url(../images/four-bg.jpg);
+.convert-all{padding: 110px 0 10px;background-image: url(../images/four-bg.jpg); overflow: hidden;
     background-position: center top;
     .top-block-2{ background-color: rgba(255,255,255,0.56);box-shadow: 0px 0px 25px 2px rgba(0,0,0,0.25);
         .convert-stuf{height: 280px; display: flex; align-items: center;  justify-content: space-between; }
         .image{position: relative; width: 42%; height: 280px;
-            img{position: absolute; top: -77px; width: 495px;}
+            img{position: absolute; top: -800px; width: 495px; opacity: 0; transition: all 1s;}
+            &.animated{
+                img{top: -77px; width: 495px; opacity: 1;}
+            }
         }
         .afrtertext{width: 58%; font-size: 21px; font-family: "Room",sans-serif; color: rgb(0, 0, 0);  line-height: 31px;}
     }
@@ -123,7 +125,7 @@
 
 // menu
 
-.header .header-nav { display: block !important; position: fixed;  z-index: 112;
+.header .header-nav { display: block !important; position: fixed;  z-index: 112; top: 170px;
     .show-hide-nav-button { position: fixed; z-index: 112;}
     .podzvoni-mne-v-heder{display: none;}
     .show-hide-nav-button{ 
