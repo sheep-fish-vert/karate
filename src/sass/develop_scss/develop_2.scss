@@ -110,9 +110,73 @@
         }
         .convert-center{ text-align: center;
             .conteiner-phone{max-width: 360px; margin: 0 auto; padding: 25px 0 20px;
-                a{display: block; text-decoration: none;font-size: 42px; font-family: "Solomon", sans-serif; color: rgb(60, 54, 54); font-weight: bold; } 
+                a{display: block; text-decoration: none;font-size: 42px; font-family: "Solomon", sans-serif; color: rgb(60, 54, 54); font-weight: bold;position: relative;
+                    &:before{content: ''; position: absolute; bottom: 0; left: 0; right: 100%; height: 1px; background-color:rgb(0, 0, 0); transition: all 0.5s; }
+                    &:hover{
+                        &:before{right: 0;}
+                    } 
+                } 
             }
         }
     }
+}
+
+// menu
+
+.header .header-nav { display: block !important; position: fixed;  z-index: 112;
+    .show-hide-nav-button { position: fixed; z-index: 112;}
+    .podzvoni-mne-v-heder{display: none;}
+    .show-hide-nav-button{ 
+        .sendwich{display: none;}
+        .show-hide-nav-text{display: block; background-color: #db2a20; width: 55px; border-top: 3px solid #ffe400;border-right: 3px solid #ffe400; border-bottom: 3px solid #ffe400; cursor: pointer; border-top-right-radius: 10px; border-bottom-right-radius: 10px; position: relative;
+            .convert{align-content: space-around;align-items: center; height: 130px;  display: flex; flex-wrap: wrap; width: 30px;
+                span{display: block;  width: 100%; text-align: center; font-size: 27px;   font-family: "Room", sans-serif;  color: rgb(255, 255, 255);  font-weight: 700;}
+            }
+            &:before{background-image: url(../images/arrow-menu.png); content: ''; position: absolute; top: 44px; right: 5px;  height: 48px; width: 19px; animation: shest 0.8s ease-out infinite;}
+            
+        }
+    }
+    .header-menu-list{visibility: hidden; width: 220px; height: 428px;right: calc(100% - 58px);  transition: all 0.3s; z-index: 112; position: absolute; left: -300px; background-image: url(../images/menu-bg.png); background-repeat: no-repeat; top: -135px;
+        .header-menu-wrap{
+            ul{ padding: 10px; 
+                li{width: 100%; padding: 6px 0; text-align: center;
+                    a{text-decoration: none; font-size: 21px; font-family: "Room", sans-serif;  color: rgb(0, 0, 0);  line-height: 1.857; text-align: center; position: relative;
+                        &:before{content: ''; position: absolute; bottom: 0; left: 0; right: 100%; height: 1px; background-color:rgb(0, 0, 0); transition: all 0.5s; }
+                        &:hover{
+                            &:before{right: 0;}
+                        }
+                    }
+                }
+            } 
+        }
+        .menu-bottom{
+            .menu-button-wrap{padding: 10px; 
+                a{display: block; text-align: center; padding: 20px 0;height: 75px;
+                    .big-text{ font-size: 32px; display: block; padding-bottom: 15px;}
+                    .small-text{ font-size: 15px; display: block;}
+                }
+            }
+            .menu-telefone{text-align: center; line-height: 63px;
+                a{text-decoration: none; font-size: 23px; font-family: "Solomon", sans-serif;  color: rgb(0, 0, 0);   line-height: 1.696;position: relative;
+                    &:before{content: ''; position: absolute; bottom: 0; left: 0; right: 100%; height: 1px; background-color:rgb(0, 0, 0); transition: all 0.5s; }
+                    &:hover{
+                        &:before{right: 0;}
+                    }
+                }
+             }
+             
+        }
+        .close-button{background-color: #f4da00; cursor: pointer; border-top-right-radius: 5px; border-bottom-right-radius: 5px; position: absolute; right: 0px; width: 25px; height: 102px; top: 0px;z-index: 1;transition: all 0.3s;opacity: 0; pointer-events: none;
+            &:before{content: ''; position: absolute; top: 27px; left: 2px; background-image: url(../images/arrow-close.png); width: 18px; height: 48px; }
+        }
+    }
+    .opened-menu{right: 100%;visibility: visible; left: 58px;
+        .close-button{right: -25px; top: 154px; opacity: 1;}
+    }
+}
+@keyframes shest { 
+    0%{ right: 5px; } 
+    50% { right: 2px; }
+    100% { right: 5px; }
 }
 

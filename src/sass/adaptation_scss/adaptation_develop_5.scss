@@ -135,6 +135,7 @@
     @media screen and (max-width: 992px){
         .fifth-block{
             .fifth-wrap{
+                .magic{    background-position: 78% top;}
                 .content{padding-top: 25px;     padding-bottom: 40px;}
                 .price{position: relative; height: 312px;width: 312px; background-size: cover;     left: calc(50% - 156px);
                     p{font:700 27.76px/32px 'Solomon';
@@ -155,7 +156,7 @@
     }
     @media screen and (max-width: 660px){
         .fifth-block{
-            .fifth-wrap{    background-position: -1233px top;
+            .fifth-wrap{background-position: -1233px top;
                 .mbox{padding: 0;}
                 .title{font:400 51px/51px 'Room';}
                 .item-list{
@@ -214,3 +215,12 @@
         }
     }
 /*END six - block*/
+/*nineth-block*/
+    @media screen and (max-width: 1200px){
+        .nineth-block{
+            .descktop{display: none;}
+            .mobile{display:block;}
+        }
+
+    }
+/*END nineth-block*/

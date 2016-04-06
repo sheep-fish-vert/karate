@@ -36,11 +36,50 @@
 }
 @media screen and (max-width: 767px){
     // slider 
-    .seventh-block .seven-wrap .slider-for {border: none; padding: 0;}
-    .seventh-block .seven-wrap .mbox2 { padding: 0;}
-    .seventh-block .seven-wrap {padding-top: 28px;  padding-bottom: 20px;}
-    .seventh-block .seven-wrap .title-text {font-size: 70px;  padding-bottom: 25px;}
+
+    .seventh-block .seven-wrap {padding-top: 28px;  padding-bottom: 20px;
+        .mbox2 { padding: 0;}
+        .slider-for {border: none; padding: 0;}
+        .title-text {font-size: 70px;  padding-bottom: 25px;}
+    }
+    
     .slider-nav{display: none;}
+    
+    // menu head
+
+    .header .header-nav {top: 0; left: 0; width: 100%; background-color: black; height: 60px; position: fixed; 
+        .podzvoni-mne-v-heder {display: block; padding: 5px 0; margin-left: 30%; max-width: 70%;  
+            .button{ float: right; margin: 0 10px;
+                span {color: white; font-size: 18px;}
+            }    
+        }
+        .header-menu-list { height: auto; background-position: center; top: 60px; width: 100%; background-color: white; left: -110%; background-image: none;
+            .menu-bottom{display: none;}
+        }
+        .opened-menu { right: 100%; visibility: visible; left: 0px;
+            .close-button { display: none;}
+        }
+        .show-hide-nav-button {display: block; border: 1px solid white; border-radius: 3px;height: 30px; width: 100px; padding: 4px; top: 13px; left: 13px; cursor: pointer;
+            .show-hide-nav-text { width: 65px; background-color: transparent; border: none; float: right;
+                &:before{display: none;}
+                .convert{display: flex; flex-wrap: nowrap;align-items: center; height: 30px; width: 100%; text-align: right; height: 16px;
+                    span{display: inline; font-size: 23px; margin-left: -4px;}
+                }
+            }
+            .sendwich{display: block; position: relative; height: 20px; width: 20px;  float: left; overflow: hidden;
+                &:before{content: ''; position: absolute; width: 51px; top: 0;right: 0; height: 4px; background-color: white; transition: all 0.3s;}
+                &:after{content: ''; position: absolute; width: 51px; bottom: 0;right: 0; height: 4px; background-color: white;transition: all 0.3s;}
+                .sendwich-wrap{ position: absolute; width: 30px; bottom: 8px;right: 0; height: 4px; background-color: white; opacity: 1; transition: all 0.3s;}
+            }
+        } 
+        .active-humburger{
+            .sendwich{
+                .sendwich-wrap{opacity: 0;}
+                &:before{transform: rotate(45deg); top: 10px;  right: -18px;}
+                &:after{transform: rotate(-45deg); bottom: 0px; right: -8px;}
+            }
+        }  
+    }
     
     //popups
     .fancybox-form .fancybox-close { top: -45px; right: 10px;}
@@ -74,7 +113,8 @@
 
 }
 @media screen and (max-width: 600px){
-    
+    // menu heder
+    .header .header-nav .podzvoni-mne-v-heder { margin-left: 42%; max-width: 55%;}
     
     // block 8
     .convert-all {
