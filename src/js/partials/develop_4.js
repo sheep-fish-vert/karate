@@ -14,9 +14,25 @@ function checkRadioButton(){
     });
 }
 
+function childrenParalax(){
+    var sectTop = $('.second-block ').offset().top-170;
+    $(window).scroll(function(event) {
+        if( $(window).scrollTop()>= sectTop ){
+            var minus = $(window).scrollTop() - sectTop;
+            console.log('minus ' , minus);
+            if( minus >= 80 ){
+                minus = 80;
+            }
+            $('.second-block .red-block .red-block-img img').css('margin-top', +minus+'px');
+            $('.second-block .yellow-block .yellow-block-img img').css('margin-top', +minus+'px');
+        }
+    });
+}
+
 $(document).ready(function(){
     formStyle();
     checkRadioButton();
+    childrenParalax();
 });
 
 $(window).load(function(){
