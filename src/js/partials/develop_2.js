@@ -46,7 +46,7 @@ function googleMap(mapWrap) {
 
 
 $(document).ready(function() {
-    //googleMap('map');
+    googleMap('map');
 
     $('.slider-for').slick({
         slidesToShow: 1,

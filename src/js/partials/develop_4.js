@@ -16,15 +16,20 @@ function checkRadioButton(){
 
 function childrenParalax(){
     var sectTop = $('.second-block ').offset().top-170;
+    var check = true;
     if( $(window).width() >= 1366 ){
         $(window).scroll(function(event) {
-            if( $(window).scrollTop()>= sectTop ){
-                var minus = $(window).scrollTop() - sectTop;
-                if( minus >= 80 ){
-                    minus = 80;
+            if( check == true ){
+                console.log('check ' , check);
+                if( $(window).scrollTop()>= sectTop ){
+                    var minus = $(window).scrollTop() - sectTop;
+                    if( minus >= 80 ){
+                        minus = 80;
+                        check = false;
+                    }
+                    $('.second-block .red-block .red-block-img img').css('margin-top', +minus+'px');
+                    $('.second-block .yellow-block .yellow-block-img img').css('margin-top', +minus+'px');
                 }
-                $('.second-block .red-block .red-block-img img').css('margin-top', +minus+'px');
-                $('.second-block .yellow-block .yellow-block-img img').css('margin-top', +minus+'px');
             }
         });
     }
