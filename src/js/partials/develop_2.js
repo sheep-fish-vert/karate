@@ -53,6 +53,8 @@ $(document).ready(function() {
         slidesToScroll: 1,
         arrows: false,
         fade: false,
+        autoplay: true,
+        autoplaySpeed: 2000,
         asNavFor: '.slider-nav'
     });
     $('.slider-nav').slick({
@@ -63,21 +65,7 @@ $(document).ready(function() {
         arrow: true,
         focusOnSelect: true
     });
-    /*
-        $('.show-hide-nav-button').click(function() {
-            if (!$('.header-menu-list').hasClass('opened-menu')) {
-                $('.header-menu-list').addClass('opened-menu');
-                $('.show-hide-nav-button').addClass('active-humburger');
-            }
-        });
-    
-        $('.close-button').click(function() {
-            if ($('.header-menu-list').hasClass('opened-menu')) {
-                $('.header-menu-list').removeClass('opened-menu');
-                $('.show-hide-nav-button').removeClass('active-humburger');
-            }
-        });
-    */
+
     $(document).on('click', function(event) {
 
         var div = $('.show-hide-nav-button');
