@@ -81,12 +81,15 @@ $ye:#ffe400;
 .header-2{top: 0;left: 0;width: 100%;padding: 10px 0px;
     .header-nav{display: none;}
     .header-top{
-        .mbox{display: flex;flex-wrap:wrap;justify-content:space-between;align-items: stretch;}
-        .header-logo{margin-left: -20px;}
+        .mbox{display: flex;justify-content:space-between;align-items: stretch;}
+        .header-logo{
+            .desktop{display: block;}
+            .tablet{display: none;}
+        }
         .header-text{line-height: 31px;color: #bdb8b6;font-size: 20px;text-align: center;display: flex;justify-content: center;align-items: center;flex-direction: column;
             p{}
         }
-        .header-contants{display: flex;justify-content: space-around;align-items: center;flex-direction: column;}
+        .header-contants{ display: flex;justify-content: space-around;align-items: center;flex-direction: column; min-width: 155px;}
         .header-telefone{margin-top: 10px;
             a{font-family: "Solomon";color: white;font-size: 42px;line-height:39px;text-decoration: none;}
         }
