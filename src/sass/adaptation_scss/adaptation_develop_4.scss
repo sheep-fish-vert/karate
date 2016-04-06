@@ -1,8 +1,13 @@
-@media screen and (max-width: 1920px){
+@media screen and (min-width: 1366px){
+    .second-block .red-block .mbox{min-height: 401px;}
+    .second-block .yellow-block{min-height: 264px;}
 
-}
-@media screen and (max-width: 1600px){
-
+    .second-block .red-block .red-block-img img{margin-top: -70px;transition:all ease .4s;}
+    .second-block .yellow-block .yellow-block-img img{margin-top: -70px;transition:all ease .4s;}
+    .second-block .red-block .red-block-img{margin-top: -130px;}
+    .second-block .yellow-block .yellow-block-img{margin-top: -270px;}
+    .second-block .yellow-block .yellow-block-img img{margin-top: 0;}
+    .second-block .yellow-block .yellow-block-text{min-height: 271px;}
 }
 @media screen and (max-width: 1366px){
     /*second-block*/
