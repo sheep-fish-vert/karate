@@ -37,7 +37,6 @@
     }
 }
 
-
 // block 8
 
 .convert-all{padding: 110px 0 10px;background-image: url(../images/four-bg.jpg); overflow: hidden;
@@ -126,7 +125,7 @@
 
 // menu
 
-.header .header-nav { display: block !important; position: fixed;  z-index: 112;
+.header .header-nav { display: block !important; position: fixed;  z-index: 112; top: 170px;
     .show-hide-nav-button { position: fixed; z-index: 112;}
     .podzvoni-mne-v-heder{display: none;}
     .show-hide-nav-button{ 
