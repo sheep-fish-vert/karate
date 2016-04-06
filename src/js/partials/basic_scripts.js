@@ -124,7 +124,7 @@ $(document).ready(function() {
     $('.footer_placeholder').height($('.footer').outerHeight());
 
     //goTo();
-    //animationBlock($('.setion-animate'));
+    animationBlock($('.animate-section'));
 });
 
 $(window).resize(function() {
