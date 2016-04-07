@@ -20,7 +20,7 @@ function childrenParalax(){
     if( $(window).width() >= 1366 ){
         $(window).scroll(function(event) {
             if( check == true ){
-                console.log('check ' , check);
+               // console.log('check ' , check);
                 if( $(window).scrollTop()>= sectTop ){
                     var minus = $(window).scrollTop() - sectTop;
                     if( minus >= 80 ){

@@ -46,7 +46,7 @@ function googleMap(mapWrap) {
 
 
 $(document).ready(function() {
-    googleMap('map');
+    //googleMap('map');
 
     $('.slider-for').slick({
         slidesToShow: 1,
@@ -71,7 +71,7 @@ $(document).ready(function() {
         var div = $('.show-hide-nav-button');
         var frt = $('.header-menu-list');
         if (!div.is(event.target) && div.has(event.target).length === 0 && !frt.is(event.target) && frt.has(event.target).length === 0) {
-            console.log('tyt');
+           // console.log('tyt');
             if ($('.header-menu-list').hasClass('opened-menu')) {
                 $('.header-menu-list').removeClass('opened-menu');
                 $('.show-hide-nav-button').removeClass('active-humburger');
