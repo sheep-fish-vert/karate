@@ -92,12 +92,12 @@
         .magic{background-image: url(../images/parlbg.png); background-position: right top; background-repeat: no-repeat;width: 100%;height: 100%; position: absolute; top:0; right:0; margin-top: 180px;}
         .fifth-wrap{background-image: url(../images/ninethbg.jpg); background-position: right top; background-repeat: no-repeat; background-color: #000; position: relative;
             .content{position: relative;    padding-top: 68px;     padding-bottom: 63px;
-                
+
             }
             .title{font:400 80px/80px 'Room'; color: #fff; width: 100%; text-align: center;}
-            .price{width: 433px;height: 435px; position: absolute; top:calc(50% - 237px); left:calc(50% - 216px); z-index: 20; 
+            .price{width: 433px;height: 435px; position: absolute; top:calc(50% - 237px); left:calc(50% - 216px); z-index: 20;
                 .conver-texter{position: relative; z-index: 21; width: 433px;height: 435px; background-image: url(../images/romb.png); background-position:center top; background-repeat: no-repeat; text-align: center;padding-top: 69px; }
-                p{font:700 39px/61px 'Solomon'; color:#fff; 
+                p{font:700 39px/61px 'Solomon'; color:#fff;
                     &:nth-child(2){font:700 148px/122px 'Solomon'; color:#ffe400;}
                     &:nth-child(3){font:700 47px/44px 'Solomon'; color:#ffe400;}
                 }
@@ -105,7 +105,7 @@
                 &:hover{
                     &:before{transform: rotate(45deg);}
                 }
-                
+
             }
             .item-list{    padding-top: 120px; padding-bottom: 100px;
                 .mobile{display: none;}
@@ -140,6 +140,14 @@
             }
 
         }
+        .button-wrap{
+            a{text-decoration: none;
+                &:hover{background-color: #ffe400;text-decoration: none;transition:all ease-out .2s;
+                       span{color: #000;}
+                }
+                &:active{background-color: #fff289;}
+            }
+        }
     }
 .button-wrap{text-align: center;
                 a{text-decoration: none;font:500 31px/37px 'Room'; color: #fff;  text-transform: uppercase; padding:10px 0 0;max-width: 678px; height: 88px;background-color: #db2a20; display: inline-block; border-radius: 8px; width: 100%; padding-top: 27px;
@@ -149,6 +157,9 @@
 /*END fifth-block*/
 /*six - block*/
     .sixth-block{
+        .animate-it{opacity: 0;visibility: hidden;transition:all ease-out .5s;
+            &.animated{opacity: 1;visibility: visible;}
+        }
         .title{font:400 77px/77px 'Room'; color: #000; width: 100%; text-align: center;}
         .item{ color: #000; text-align: center; position: relative; padding-top: 24px;
                 p{font:400 19px/28px 'Solomon';}
