@@ -170,7 +170,7 @@ $ye:#ffe400;
         &:hover{
             b{color: black;}
         }
-        b{font-size: 45px;display: block;line-height: 1;transition:all ease-out .2s;margin-top: -14px;}
+        b{font-size: 45px;display: block;line-height: 1;transition:all ease-out .2s;margin-top: -14px; padding-bottom: 5px;}
     }
     .errorText{display: none !important;}
     .form_row.error{
@@ -183,7 +183,8 @@ $ye:#ffe400;
 /*/lend-form*/
 
 /*third-block*/
-.third-block{background: #000 url('../images/third-block-bg.png') center top no-repeat;min-height: 735px;
+.third-block{background: #000  center top no-repeat;min-height: 735px; overflow: hidden; position: relative;
+    .magik2{background: #000 url('../images/caratist.jpg') center top no-repeat;  position: absolute; top: 0; left: 0; right: 0; height: 836px; }
     .lend-form{float: right;padding-right: 0;padding-bottom: 0;}
     .lend-form .contact-form-title h4{margin-bottom: 37px;line-height: 37px;padding-top: 15px;}
     .lend-form .radio-holder-wrap{padding-bottom: 56px;}

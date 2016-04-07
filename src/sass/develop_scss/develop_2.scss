@@ -98,7 +98,7 @@
 }
 
 // footer map
-#map{height: 870px; width: 100%;}
+#map{height: 870px; width: 100%; background-image: url(../images/map.jpg); background-position: top center; background-size: cover ;}
 .ele-wrap{background-image: url(../images/four-bg.jpg); background-position: center top;
     .title-text{text-align: center; font-size: 53px; font-family: "Room", sans-serif; padding: 60px 0 55px;}
 }
@@ -172,7 +172,7 @@
             &:before{content: ''; position: absolute; top: 27px; left: 2px; background-image: url(../images/arrow-close.png); width: 18px; height: 48px; }
         }
     }
-    .opened-menu{right: 100%;visibility: visible; left: 58px;
+    .opened-menu{right: 100%;visibility: visible; left: 0px;
         .close-button{right: -25px; top: 154px; opacity: 1;}
     }
 }
