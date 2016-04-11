@@ -140,7 +140,7 @@
                 .price{position: relative;  height: 312px;width: 312px;    left: calc(50% - 156px);
                     .conver-texter{height: 312px;width: 312px; background-size: cover;}
                     p{font:700 27.76px/27.76px 'Solomon'; display: block;
-                        &:nth-child(2){font:700 105.36px/105.36px 'Solomon'; margin-top: -5px;}
+                        &:nth-child(2){font:700 105.36px/105.36px 'Solomon'; margin-top: -5px;padding-top: 5px;}
                         &:nth-child(3){font:700 33.46px/33.46px 'Solomon';margin-top: -12px;}
                     }
                     &:before{ width: 220px; height: 220px; z-index: -1; transform: rotate(40deg);top:calc(50% - 109px); left: calc(50% - 111px);z-index: 20; transition: all 0.3s;}
