@@ -19,6 +19,26 @@ function validate(form, options){
             errorClass : 'errorText',
             focusCleanup : true,
             focusInvalid : false,
+            rules: {
+                lend_form_select_children: {
+                  require_from_group: [1, ".mygr"]
+                },
+                lend_form_select_adult: {
+                  require_from_group: [1, ".mygr"]
+                },
+                lend_form_select_children2: {
+                  require_from_group: [1, ".mygr2"]
+                },
+                lend_form_select_adult2: {
+                  require_from_group: [1, ".mygr2"]
+                },
+                lend_form_select_children3: {
+                  require_from_group: [1, ".mygr3"]
+                },
+                lend_form_select_adult3: {
+                  require_from_group: [1, ".mygr3"]
+                }
+            },
             invalidHandler: function(event, validator) {
                 if(typeof(setings.errorFunction) === 'function'){
                     setings.errorFunction(form);
@@ -48,6 +68,7 @@ function validate(form, options){
                     setings.submitFunction(form);
                 } else {
                     $form[0].submit();
+
                 }
             }
         });
@@ -191,7 +212,7 @@ function popNext(popupId, popupWrap){
 /*маска на инпуте*/
 function Maskedinput(){
     if($('.tel-mask')){
-        $('.tel-mask').mask('17 999-99-99 ');
+        $('.tel-mask').mask('+375 99 999-99-99');
     }
 }
 
